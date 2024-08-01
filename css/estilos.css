@@ -37,27 +37,41 @@ button {
     background-color: #f0b9b9; }
 
 header {
-  background-color: #f0b9b9;
-  display: flex;
-  justify-content: space-between;
-  align-items: end; }
+  background-color: #f0b9b9; }
   header img {
     height: 100px;
     width: 200px;
     margin-left: 10px;
     object-fit: contain; }
+  header .navbar {
+    background-color: #f0b9b9 !important;
+    padding: 0; }
+    header .navbar .navbar-brand {
+      padding: 0;
+      margin: 0; }
+    header .navbar .container-fluid {
+      justify-content: space-between;
+      align-items: end; }
+      header .navbar .container-fluid .navbar-collapse {
+        justify-content: end; }
+      header .navbar .container-fluid .navbar-toggler {
+        align-self: center; }
   header nav ul {
     list-style: none;
-    display: flex; }
+    display: flex;
+    align-items: baseline; }
     header nav ul li {
-      margin: 10px; }
+      /*margin: 10px;*/ }
       header nav ul li a {
         text-decoration: none;
-        color: black;
+        color: #3c3232 !important;
         font-weight: bold;
-        font-size: 16px; }
+        font-size: 18px !important; }
         header nav ul li a:hover {
           color: white; }
+        header nav ul li a.active {
+          color: black !important;
+          font-size: 20px !important; }
 
 .banner img {
   height: 300px;
@@ -153,7 +167,7 @@ footer {
     grid-template-columns: 400px 200px;
     grid-template-rows: 200px; }
   .sobre-nosotros div p {
-    font-size: 15px; } }
+    font-size: 13px; } }
 
 @media screen and (max-width: 770px) {
   h1 {
@@ -188,7 +202,9 @@ footer {
 
 @media screen and (max-width: 630px) {
   header nav ul li a {
-    font-size: 14px; }
+    font-size: 14px !important; }
+    header nav ul li a.active {
+      font-size: 17px !important; }
   .galeria-grid {
     grid-template-columns: 200px 200px; }
   .novedades .galeria-grid div:nth-child(3) {

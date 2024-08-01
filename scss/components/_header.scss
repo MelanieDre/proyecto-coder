@@ -1,27 +1,47 @@
 header {
     background-color: rgb(240, 185, 185);
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
     img {
         height: 100px;
         width: 200px;
         margin-left: 10px;
         object-fit: contain;
     }
+    .navbar {
+        background-color: rgb(240, 185, 185) !important;
+        padding: 0;
+        .navbar-brand {
+            padding: 0;
+            margin: 0;
+        }
+        .container-fluid {
+            justify-content: space-between;
+            align-items: end;
+            .navbar-collapse  {
+                justify-content: end;
+            }
+            .navbar-toggler {
+                align-self: center;
+            }
+        }
+    }
     nav {
         ul {
             list-style: none;
             display: flex;
+            align-items: baseline;
             li {
-                margin: 10px;
+                /*margin: 10px;*/
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: rgb(60, 50, 50) !important;
                     font-weight: bold;
-                    font-size: 16px;
+                    font-size: 18px !important;
                     &:hover {
                         color: rgb(255, 255, 255);
+                    }
+                    &.active {
+                        color: black !important;
+                        font-size: 20px !important;
                     }
                 }
             }
