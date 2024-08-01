@@ -1,0 +1,19 @@
+footer {
+    background-color: rgb(240, 185, 185);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+        margin-right: 125px;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+}
+.logo-footer {
+    height: 50px;
+    width: 100px;
+    object-fit: contain;
+}

@@ -1,0 +1,14 @@
+.sobre-nosotros {
+    display: grid;
+    grid-template-columns: 500px 250px;
+    grid-template-rows: 250px;
+    margin-bottom: 69px;
+    justify-content: center;
+    text-align: right;
+    align-items: center;
+    gap: 30px;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

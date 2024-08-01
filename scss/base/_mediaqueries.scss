@@ -1,0 +1,117 @@
+@media screen and (max-width: 850px){
+    .galeria-grid {
+        gap: 10px;
+    }
+    .sobre-nosotros {
+        grid-template-columns: 400px 200px;
+        grid-template-rows: 200px;
+    }
+    .sobre-nosotros div p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 770px){
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 13px;
+    }
+    header img {
+        height: 80px;
+        width: 180px;
+    }
+    .galeria-grid {
+        grid-template-columns: repeat(3, 200px);
+        grid-auto-rows: 250px;
+    }
+    .galeria-grid div img {
+        height: 200px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 690px) {
+    header img {
+        height: 50px;
+        width: 150px;
+        margin: 10px;
+    }
+    .sobre-nosotros {
+        grid-template-columns: 400px;
+        grid-template-rows: 200px 200px;
+        text-align: center;
+    }
+    .sobre-nosotros img {
+        object-fit: contain;
+    }
+}
+@media screen and (max-width: 630px) {
+    header nav ul li a {
+        font-size: 14px;
+    }
+    .galeria-grid {
+        grid-template-columns:  200px 200px;
+    }
+    .novedades .galeria-grid div:nth-child(3) {
+        display: none;
+    }
+    .mas-vendidos .galeria-grid div:nth-child(3) {
+        display: none;
+    }
+    .productos .galeria-grid div:nth-child(9) {
+        display: none;
+    }
+}
+@media screen and (max-width: 570px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 520px) {
+    .whatsapp {
+        bottom: 40px;
+        right: 40px;
+    }
+    .whatsapp img {
+        width: 50px;
+    }
+    footer div {
+        margin-right: 100px;
+    }
+    footer img {
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 410px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li {
+        margin: 5px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .banner {
+        display: none;
+    }
+    .galeria-grid {
+        grid-template-columns: 200px;
+    }
+    .productos .galeria-grid div:nth-child(9) {
+        display: block;
+    }
+    .sobre-nosotros {
+        grid-template-columns: 300px;
+    }
+}

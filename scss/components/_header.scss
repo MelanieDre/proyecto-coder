@@ -1,0 +1,30 @@
+header {
+    background-color: rgb(240, 185, 185);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    img {
+        height: 100px;
+        width: 200px;
+        margin-left: 10px;
+        object-fit: contain;
+    }
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                margin: 10px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 16px;
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+}
