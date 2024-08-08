@@ -13,11 +13,22 @@
         text-align: right;
         margin-top: 20px;
         margin-bottom: 120px;
+        .form-control {
+            border-color: rgb(150, 150, 150) !important;
+        }
         div {
             grid-column-start: 2;
             grid-column-end: 3;
             text-align: left;
             margin-top: 10px;
+            button {
+                border-color: rgb(150, 150, 150) !important;
+                color: black !important;
+                &:hover {
+                    background-color: $color-principal;
+                    border-color: $color-principal !important;
+                }
+            }
         }
     }
 }
