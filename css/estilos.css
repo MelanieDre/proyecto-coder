@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.estilo-titulo, h1, h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 * {
   padding: 0;
   margin: 0;
@@ -10,16 +15,10 @@ body {
   background-color: #e6e6e6; }
 
 h1 {
-  font-size: 40px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  font-size: 40px; }
 
 h2 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px; }
+  font-size: 30px; }
 
 h3 {
   font-size: 19px; }
@@ -58,17 +57,15 @@ header {
     list-style: none;
     display: flex;
     align-items: baseline; }
-    header nav ul li {
-      /*margin: 10px;*/ }
-      header nav ul li a {
-        text-decoration: none;
-        color: #3c3232 !important;
-        font-weight: bold;
-        font-size: 18px !important; }
-        header nav ul li a:hover {
-          color: white !important; }
-        header nav ul li a.active {
-          font-size: 20px !important; }
+    header nav ul li a {
+      text-decoration: none;
+      color: #3c3232 !important;
+      font-weight: bold;
+      font-size: 18px !important; }
+      header nav ul li a:hover {
+        color: white !important; }
+      header nav ul li a.active {
+        font-size: 20px !important; }
 
 .banner img {
   height: 300px;
@@ -78,16 +75,13 @@ header {
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(3, 250px);
-  grid-auto-rows: 300px;
   gap: 50px;
+  grid-auto-rows: 300px;
   justify-content: center;
   margin-bottom: 40px; }
   .galeria-grid div {
     text-align: center;
-    border: 2px solid transparent;
-    /* border-width: 2px;
-        border-style: solid;
-        border-color: transparent; */ }
+    border: 2px solid transparent; }
     .galeria-grid div:hover {
       border-width: 2px;
       border-color: #f0b9b9;
@@ -103,12 +97,12 @@ header {
 .sobre-nosotros {
   display: grid;
   grid-template-columns: 500px 250px;
+  gap: 30px;
   grid-template-rows: 250px;
   margin-bottom: 69px;
   justify-content: center;
   text-align: right;
-  align-items: center;
-  gap: 30px; }
+  align-items: center; }
   .sobre-nosotros img {
     height: 100%;
     width: 100%; }
@@ -120,10 +114,10 @@ header {
 .contacto form {
   display: grid;
   grid-template-columns: 100px 200px;
+  gap: 5px 10px;
   grid-template-rows: 20px 20px 20px 40px 40px;
   margin-left: 20px;
   margin-right: 20px;
-  gap: 5px 10px;
   text-align: right;
   margin-top: 20px;
   margin-bottom: 120px; }
