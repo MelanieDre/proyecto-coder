@@ -1,6 +1,6 @@
 @media screen and (max-width: 850px){
     .galeria-grid {
-        gap: 10px;
+        gap: 50px 10px;
     }
     .sobre-nosotros {
         grid-template-columns: 400px 200px;
@@ -18,10 +18,15 @@
         font-size: 25px;
     }
     h3 {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     p {
         font-size: 13px;
+        margin: 3px;
+        &.cuotas {
+            font-size: 11px !important;
+            margin-bottom: 5px !important;
+        }
     }
     header img {
         height: 80px;
@@ -29,11 +34,15 @@
     }
     .galeria-grid {
         grid-template-columns: repeat(3, 200px);
-        grid-auto-rows: 250px;
+        grid-auto-rows: 305px;
+        gap: 30px 10px;
     }
     .galeria-grid div img {
         height: 200px;
         width: 150px;
+    }
+    .galeria-grid button {
+        font-size: 13px;
     }
 }
 @media screen and (max-width: 690px) {

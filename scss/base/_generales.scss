@@ -37,8 +37,10 @@ h2 {
     font-size: 30px;
     @extend .estilo-titulo;
 }
-h3{
-    font-size: 19px;
+h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 p {
     font-size: 16px;
