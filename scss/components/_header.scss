@@ -35,13 +35,20 @@ header {
                     color: rgb(60, 50, 50) !important;
                     font-weight: bold;
                     font-size: 18px !important;
+                    transition-duration: 0.3s !important;
                     &:hover {
                         color: rgb(255, 255, 255) !important;
+                        transform: scale(1.05);
                     }
                     &.active {
                         font-size: 20px !important; 
                     }
                 }
+            }
+        }
+        .navbar-collapse {
+            ul {
+                align-items: end;
             }
         }
     }

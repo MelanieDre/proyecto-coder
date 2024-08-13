@@ -35,6 +35,9 @@ button {
   button:hover {
     background-color: #f0b9b9; }
 
+main {
+  min-height: 4px; }
+
 header {
   background-color: #f0b9b9; }
   header img {
@@ -63,11 +66,15 @@ header {
       text-decoration: none;
       color: #3c3232 !important;
       font-weight: bold;
-      font-size: 18px !important; }
+      font-size: 18px !important;
+      transition-duration: 0.3s !important; }
       header nav ul li a:hover {
-        color: white !important; }
+        color: white !important;
+        transform: scale(1.05); }
       header nav ul li a.active {
         font-size: 20px !important; }
+  header nav .navbar-collapse ul {
+    align-items: end; }
 
 .banner img {
   height: 300px;
@@ -78,17 +85,18 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 250px);
   gap: 50px;
-  grid-auto-rows: 380px;
+  grid-auto-rows: 378px;
   justify-content: center;
   margin-bottom: 40px; }
   .galeria-grid div {
     text-align: center;
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    transition: 1s; }
     .galeria-grid div:hover {
       border-width: 2px;
-      border-color: #f0b9b9;
       border-style: solid;
-      border-radius: 5px; }
+      border-radius: 10px;
+      transform: scale(1.08); }
     .galeria-grid div img {
       height: 250px;
       width: 200px;
@@ -101,7 +109,8 @@ header {
       margin-bottom: 10px; }
     .galeria-grid div button {
       border-color: #969696 !important;
-      color: black !important; }
+      color: black !important;
+      transition-duration: 0.4s; }
       .galeria-grid div button:hover {
         background-color: #f0b9b9;
         border-color: #f0b9b9 !important; }
@@ -139,13 +148,15 @@ header {
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: left;
-    margin-top: 10px; }
+    margin-top: 2px !important; }
     .contacto form div button {
       border-color: #969696 !important;
-      color: black !important; }
+      color: black !important;
+      transition-duration: 0.4s; }
       .contacto form div button:hover {
         background-color: #f0b9b9;
-        border-color: #f0b9b9 !important; }
+        border-color: #f0b9b9 !important;
+        transform: scale(1.03); }
 
 .whatsapp {
   position: fixed;
@@ -198,7 +209,7 @@ footer {
     width: 180px; }
   .galeria-grid {
     grid-template-columns: repeat(3, 200px);
-    grid-auto-rows: 305px;
+    grid-auto-rows: 303px;
     gap: 30px 10px; }
   .galeria-grid div img {
     height: 200px;
@@ -211,6 +222,8 @@ footer {
     height: 50px;
     width: 150px;
     margin: 10px; }
+  .banner img {
+    height: 200px; }
   .sobre-nosotros {
     grid-template-columns: 400px;
     grid-template-rows: 200px 200px;
@@ -249,6 +262,10 @@ footer {
     height: 40px;
     width: 40px;
     margin: 5px; } }
+
+@media screen and (max-width: 480px) {
+  .banner img {
+    height: 150px; } }
 
 @media screen and (max-width: 410px) {
   header nav ul {

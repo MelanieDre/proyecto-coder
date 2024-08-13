@@ -1,16 +1,18 @@
 .galeria-grid {
     @include grid(repeat(3, 250px), 50px);
-    grid-auto-rows: 380px;
+    grid-auto-rows: 378px;
     justify-content: center;
     margin-bottom: 40px;
     div {
         text-align: center;
         border: 2px solid transparent;
+        transition: 1s;
         &:hover {
             border-width: 2px;
-            border-color: $color-principal;
+            // border-color: $color-principal;
             border-style: solid;
-            border-radius: 5px;
+            border-radius: 10px;
+            transform: scale(1.08);
         }
         img {
             height: 250px;
@@ -28,6 +30,7 @@
         button {
             border-color: rgb(150, 150, 150) !important;
             color: black !important;
+            transition-duration: 0.4s;
             &:hover {
                 background-color: $color-principal;
                 border-color: $color-principal !important;

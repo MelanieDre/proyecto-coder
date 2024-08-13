@@ -34,7 +34,7 @@
     }
     .galeria-grid {
         grid-template-columns: repeat(3, 200px);
-        grid-auto-rows: 305px;
+        grid-auto-rows: 303px;
         gap: 30px 10px;
     }
     .galeria-grid div img {
@@ -50,6 +50,9 @@
         height: 50px;
         width: 150px;
         margin: 10px;
+    }
+    .banner img {
+        height: 200px;
     }
     .sobre-nosotros {
         grid-template-columns: 400px;
@@ -101,6 +104,11 @@
         height: 40px;
         width: 40px;
         margin: 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .banner img {
+        height: 150px;
     }
 }
 @media screen and (max-width: 410px) {

@@ -18,13 +18,15 @@
             grid-column-start: 2;
             grid-column-end: 3;
             text-align: left;
-            margin-top: 10px;
+            margin-top: 2px !important;
             button {
                 border-color: rgb(150, 150, 150) !important;
                 color: black !important;
+                transition-duration: 0.4s;
                 &:hover {
                     background-color: $color-principal;
                     border-color: $color-principal !important;
+                    transform: scale(1.03);
                 }
             }
         }
