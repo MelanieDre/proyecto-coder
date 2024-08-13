@@ -75,6 +75,9 @@ header {
         font-size: 20px !important; }
   header nav .navbar-collapse ul {
     align-items: end; }
+  header nav .navbar-collapse ul li a {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important; }
 
 .banner img {
   height: 300px;
@@ -273,6 +276,8 @@ footer {
     text-align: center; }
   header nav ul li {
     margin: 5px; }
+  .navbar-collapse ul li {
+    margin: 0 !important; }
   h2 {
     font-size: 20px; }
   .banner {

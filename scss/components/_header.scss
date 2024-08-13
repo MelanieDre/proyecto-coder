@@ -50,6 +50,10 @@ header {
             ul {
                 align-items: end;
             }
+            ul li a {
+                padding-top: 2px !important;
+                padding-bottom: 2px !important;
+            }
         }
     }
 }
